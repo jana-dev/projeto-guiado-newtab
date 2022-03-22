@@ -1,0 +1,26 @@
+body{
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    background: linear-gradient(45deg, #fff, #1f1fd1);
+    padding: 10px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+}
+
+.menu a{
+    text-decoration: none;
+    margin: 10px 20px;
+    padding: 10px;
+    border: 1px solid #b9b9ff;
+    color: black;
+    border-radius: 10px;
+}
+.menu a:hover{
+    background-color: #b9b9ff;
+}
