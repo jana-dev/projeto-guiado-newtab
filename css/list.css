@@ -1,0 +1,34 @@
+#listagem{
+    margin: 30px 20px;
+}
+
+
+.tabela{
+    width: 100%;
+    border-collapse: collapse;
+ 
+}
+
+.tabela tr:nth-child(1){
+    background-color: #b9b9ff;
+    font-weight: bold;
+   
+}
+
+.tabela tr td{
+    padding: 5px;
+}
+
+.tabela button{
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #b9b9ff;
+    color: black;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.tabela button:hover{
+    background-color: #b9b9ff;
+    color: #fff;
+}
