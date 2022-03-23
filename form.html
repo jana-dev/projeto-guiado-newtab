@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/form.css">
     <title>Projeto Guiado New Tab</title>
 </head>
 <body>
@@ -19,8 +20,32 @@
     </section>
     <!--Fim menu-->
 
-    <section>
-        Formulário
+    <section id="formulario">
+        <form>
+            <label for="nome">Nome:</label>
+            <input name="nome" type="text" id="nome" required>
+
+            <label for="telefone">Telefone:</label>
+            <input name="telefone" type="text" id="telefone" required>
+
+            <div class="bloco-experiencia">
+                <div class="label-experiencia">
+                    <label>Experiência Prévia:</label>
+                </div>
+                <div class="bloco-radio">
+                    <div class="radio-sim">
+                        <input type="radio" name="experiencia" id="experiencia-sim" required >
+                        <label for="experiencia-sim">Sim</label>
+                    </div>
+                    <div class="radio-nao">
+                        <input type="radio" name="experiencia" id="experiencia-nao" required >
+                        <label for="experiencia-nao">Não</label>
+                    </div>
+                </div>
+            </div>
+        
+            <input type="submit" value="Salvar">
+        </form>
     </section>
 
 </body>

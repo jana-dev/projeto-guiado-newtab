@@ -1,0 +1,44 @@
+#formulario{
+    display: flex;
+    justify-content: center;
+}
+
+
+form{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+form label{
+    padding: 5px;
+}
+
+form input[type=text]{
+    border: none;
+    background-color: rgb(247, 247, 253);
+    padding: 8px 5px;
+}
+
+.bloco-experiencia{
+    margin: 10px 0px 20px 0px;
+  
+    display:flex
+}
+.radio-nao{
+    margin-top: 5px;
+}
+
+form input[type=submit]{
+    border: none;
+    padding: 10px;
+    background-color: #b9b9ff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form input[type=submit]:hover{
+    background-color: #cacaf7;
+    border: 1px solid #b9b9ff;
+    padding: 9px;
+}
