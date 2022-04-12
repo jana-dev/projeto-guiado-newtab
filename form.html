@@ -15,13 +15,13 @@
 
     <!--Inicio menu-->
     <section class="menu">
-        <a href="index.html">Listagem</a>
+        <a id="goHome" href="index.html">Listagem</a>
         <a href="form.html">Cadastrar</a>
     </section>
     <!--Fim menu-->
 
     <section id="formulario">
-        <form>
+        <form onsubmit="testaFormulario(event);">
             <label for="nome">Nome:</label>
             <input name="nome" type="text" id="nome" required>
 
@@ -34,11 +34,11 @@
                 </div>
                 <div class="bloco-radio">
                     <div class="radio-sim">
-                        <input type="radio" name="experiencia" id="experiencia-sim" required >
+                        <input type="radio" name="experiencia" id="experiencia-sim" value="true" required >
                         <label for="experiencia-sim">Sim</label>
                     </div>
                     <div class="radio-nao">
-                        <input type="radio" name="experiencia" id="experiencia-nao" required >
+                        <input type="radio" name="experiencia" id="experiencia-nao" value="false" required >
                         <label for="experiencia-nao">Não</label>
                     </div>
                 </div>
@@ -47,6 +47,9 @@
             <input type="submit" value="Salvar">
         </form>
     </section>
+
+
+    <script src="./js/form.js"></script>
 
 </body>
 </html>
