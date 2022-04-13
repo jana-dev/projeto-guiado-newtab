@@ -30,6 +30,23 @@
     cursor: pointer;
 }
 .tabela button:hover{
+    background-color: #f77d83;
+    color: #fff;
+}
+
+.btEditar{
+    color: black;
+    margin-left: 10px;
+    text-decoration: none;
+    padding: 5px 8px;
+    border: 1px solid #b9b9ff;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btEditar:hover{
     background-color: #b9b9ff;
     color: #fff;
+    
+   
 }
