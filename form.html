@@ -26,7 +26,7 @@
             <input name="nome" type="text" id="nome" required>
 
             <label for="telefone">Telefone:</label>
-            <input name="telefone" type="text" id="telefone" required>
+            <input name="telefone" type="text" id="telefone" onkeypress="testaCampoTelefone(event)" onfocus="this.value = '' " required>
 
             <div class="bloco-experiencia">
                 <div class="label-experiencia">

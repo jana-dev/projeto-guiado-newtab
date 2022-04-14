@@ -1,9 +1,29 @@
 function testaFormulario(e){
     e.preventDefault();
+
+    /*for(i in e.target.elements['telefone'].value){
+        if('0123456789'.indexOf(e.target.elements['telefone'].value[i]) == -1){
+            alert('Apenas números são permitidos no campo telefone!');
+            return false;
+        }
+    } */
+
+    var phonePattern = /[^0-9-() ]+/g;
+    if(phonePattern.test(e.target.elements['telefone'].value)){
+        alert('Apenas números são permitidos no campo telefone!');
+        return false;
+    }
+    
+
+    if(e.target.elements['telefone'].value.replace(/[-() ]/g, "").length < 11){
+        alert('Número inválido!');
+        return false;
+    }
+
     
     var peopleRaw = localStorage.getItem('people')
     if(peopleRaw != null){
-        var people = JSON.parse(peopleRaw)
+        var people = JSON.parse(peopleRaw);
     }else{
         var people = [];
     }
@@ -53,4 +73,24 @@ if(id !== null){
         document.getElementById('experiencia-nao').checked = true
     }
 
+}
+
+function testaCampoTelefone(e){
+    e.preventDefault();
+    console.log(e);
+
+    if(e.target.value.length == 0){
+        e.target.value += '(';
+    }
+    if(e.target.value.length == 3){
+        e.target.value += ') ';
+    }
+
+    if(e.target.value.length == 10){
+        e.target.value += '-';
+    }
+
+    if((/[0-9 -()]/g).test(e.key) && e.target.value.length < 15){
+        e.target.value += e.key;
+    }
 }
