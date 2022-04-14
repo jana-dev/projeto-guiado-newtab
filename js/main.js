@@ -1,7 +1,7 @@
-var peopleRaw = localStorage.getItem('people')
-if(peopleRaw != null){
-    var people = JSON.parse(peopleRaw)
-}else{
+var peopleRaw = localStorage.getItem('people') //obtem o valor do item no armazenamento
+if(peopleRaw != null){ //null em js representa um valor nulo ou vazio (se o item é diferente de vazio, então:)
+    var people = JSON.parse(peopleRaw) // ao receber dados do servidor web os dados são string, com o JSON.parse() os dados se tornam objeto JS
+}else{ //senão:
     var people = [];
 }
 
